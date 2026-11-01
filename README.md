@@ -1,4 +1,4 @@
-# Comparative Aggressiveness Explorer (CAE)
+# Aggressive Factor Test Explorer
 
 **V0.1 — local-first engineering screening prototype**
 
