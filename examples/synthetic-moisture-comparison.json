@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "0.1.0",
+  "engineVersion": "0.1.0",
+  "assessment": {
+    "id": "example-001",
+    "title": "Synthetic moisture challenge comparison",
+    "objective": "Identify a more challenging fictional packaging construction",
+    "context": "Invented illustration only; not real WVTR data",
+    "moreMeans": "Higher assigned hypothetical challenge scores",
+    "mode": "hybrid",
+    "method": "weighted_mean",
+    "rankingDirection": "most_aggressive",
+    "datumAlternativeId": "alt-hdpe",
+    "scale": { "min": 0, "max": 5, "step": 1, "anchors": { "low": "Low challenge", "mid": "Intermediate", "high": "High challenge" } },
+    "productAcknowledged": false,
+    "alternatives": [
+      { "id": "alt-hdpe", "name": "HDPE example", "description": "Fictional datum", "gate": "unknown" },
+      { "id": "alt-pet", "name": "PET example", "description": "Fictional comparator", "gate": "unknown" }
+    ],
+    "criteria": [
+      { "id": "c1", "name": "Assigned permeation tendency", "definition": "Fictional ordinal rating", "direction": "higher", "weight": 50, "evidence": "assumption", "notes": "" },
+      { "id": "c2", "name": "Assigned environmental sensitivity", "definition": "Fictional ordinal rating", "direction": "higher", "weight": 30, "evidence": "assumption", "notes": "" },
+      { "id": "c3", "name": "Assigned thickness-related challenge", "definition": "Fictional ordinal rating", "direction": "higher", "weight": 20, "evidence": "assumption", "notes": "" }
+    ],
+    "ratings": { "alt-hdpe": { "c1": 2, "c2": 2, "c3": 4 }, "alt-pet": { "c1": 4, "c2": 3, "c3": 2 } },
+    "ratingDetails": {},
+    "pugh": { "alt-pet": { "c1": "more", "c2": "more", "c3": "less" } },
+    "pughRationale": {},
+    "assumptions": "All ratings are invented teaching scores, not physical property measurements.",
+    "conclusion": "Demonstration only. Physical measurements and relevant testing required."
+  }
+}
